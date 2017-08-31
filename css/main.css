@@ -1,0 +1,189 @@
+#comment_form {
+    width: 700px;
+    margin: 0 auto;
+}
+.form-group-elements{
+    display: inline-block;
+}
+.form-group-elements .context-text{
+    font-size: small;
+}
+.comment-form label{
+    font-weight: bold;
+}
+.comment-form input[type=text]{
+    padding: 3px;
+    border: 1px solid #dfdfdf;
+    background: #fff;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+.comment-form input[type=text]:focus{
+    border: 1px solid #228B22;
+    outline: none;
+}
+.comment-form textarea:focus{
+    border: 1px solid #228B22;
+    outline: none;
+}
+.comment-form select:focus{
+    border: 1px solid #228B22;
+    outline: none;
+}
+.comment-form select{
+    padding: 3px;
+    border: 1px solid #dfdfdf;
+    background: #fff;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+.comment-form .button-right{
+    float: right;
+    margin-right: 20px;
+}
+.comment-form input[type=button]{
+    border-radius: 3px;
+    box-shadow: none;
+    border: none;
+    background: #228B22;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.comment-form input[type=reset]{
+    border-radius: 3px;
+    box-shadow: none;
+    border: none;
+    background: #b7b8b2;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.comment-form input[type=reset]:hover{
+    background: #555;
+}
+.comment-form input[type=button]:hover{
+    background: #0a700e;
+}
+#region{
+    margin-left: 27px;
+}
+#firstname{
+    margin-left: 3px;
+}
+#city{
+    width: 158px;
+}
+#phone{
+    margin-left: 13px;
+}
+#email{
+    margin-left: 6px;
+}
+.comment-form textarea{
+    padding: 3px;
+    border-radius: 3px;
+    border: 1px solid #dfdfdf;
+    color: #666;
+    background: #fff;
+    margin: 0;
+    resize: none;
+    width: 673px;
+    font-size: 12px;
+}
+
+.point{
+    cursor: pointer;
+}
+
+.insert_span{
+    display: block;
+    margin-top: 15px;
+}
+.red{
+    border: 2px double red !important;
+}
+.orange{
+    border: 2px double orange !important;
+}
+
+#block_table{
+    width: 900px;
+    margin: 0 auto;
+}
+#block_stat{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+#block_stat table {
+    width: 560px;
+    margin: 0 auto;
+}
+#block_table table {
+    width: 100%;
+}
+table tr td{
+    border-bottom: 1px solid #444444;
+    padding: 3px;
+}
+table tr:nth-child(odd){
+    background: #f7f7f7;
+}
+#myTable button{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+th{
+    background: #b7b8b2;
+    border-bottom: 2px solid #444444;
+}
+#label_city, #label_comment, th, #myTable button{
+    font-weight: bold;
+}
+.label_small{
+    font-size: 0.8em;
+    color: #666666;
+}
+#main_img{
+    width: 700px;
+    margin: 10% auto 0;
+    text-align: center;
+}
+/* главное меню */
+nav{
+    width: 700px;
+    margin: 0 auto 20px;
+
+    box-sizing: border-box;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px;
+    border-bottom: 2px solid #ffffff;
+}
+nav ul li.active{
+    border-bottom: 2px solid #228B22;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #444;
+}
+nav ul li a:link, nav ul li a:visited{
+    color: #444;
+}
+nav ul li:hover{
+    border-bottom: 2px solid #444444;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: #888888;
+}
+nav img{
+    height: 24px;
+
+}

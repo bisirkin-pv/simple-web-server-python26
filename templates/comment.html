@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    {{ block_css }}
+</head>
+<body>
+    {{ main_menu }}
+    <div id="comment_form">
+        <form name="comment" class="comment-form" method="POST" action="/comment/save/">
+            <div class="form-group-elements">
+            <label for="surname">Фамилия<span style="color: red">*</span>
+                <input id="surname" name="surname" type="text" placeholder="Фамилия" value="" maxlength="50"/>
+            </label>
+            <label for="firstname">Имя<span style="color: red">*</span>
+                <input id="firstname" name="firstname" type="text" placeholder="Имя" value="" maxlength="50"/>
+            </label>
+            <label for="patronymic">Отчество
+                <input id="patronymic" name="patronymic" type="text" placeholder="Отчество" value="" maxlength="50"/>
+            </label>
+            </div>
+            <div class="form-group-elements">
+            <label for="region">Регион
+                <select id="region" name="region" onchange="selectcity()">
+                    <option value="not">Выберите регион</option>
+                </select>
+            </label>
+            <label for="city">Город
+                <select id="city" name="city">
+                    <option value="not">Выберите город</option>
+                </select>
+            </label>
+            </div>
+            <div class="form-group-elements">
+            <label for="phone">Телефон
+                <input id="phone" name="phone" type="text" placeholder="(код) номер"  value="" maxlength="13"/>
+            </label>
+<!--            <div class="label_small">код города (3-5 цифры) номер телефона 5-7 цифр</div>-->
+            <label for="email">Email
+                <input id="email" name="email" type="text" placeholder="email@mail.ru" value="" maxlength="100"/>
+            </label>
+            </div>
+            <div class="form-group-elements">
+            <label for="comment">Комментарий<span style="color: red">*</span>
+                <textarea cols="40" id="comment" name="comment" rows="8" maxlength="500"></textarea>
+            </label>
+            <div class="form-group-elements">
+            <span class="context-text">Поля с <span style="color: red">*</span> обязательны к заполнению.</span>
+            </div>
+            <div class="button-right">
+                <input type="reset" value="Очистить"/>
+                <input type="button" id="submit_comment" onclick="save()" value="Отправить"/>
+            </div>
+            </div>
+        </form>
+        </div>
+{{ block_js }}
+<script type="text/javascript"> loadregion()</script>
+<script type="text/javascript">setActiveMenu();</script>
+</body>
+</html>

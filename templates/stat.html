@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    {{ block_css }}
+</head>
+<body>
+    {{ main_menu }}
+    <div id="block_stat">
+        <p>Регионы у которых количество комментариев больше или равно 5</p>
+        <table id="TableStat5" cellspacing="0">
+            <tr align="center">
+                <th width="150px" >Регион</th>
+                <th width="200px" >Кол-во комментариев</th>
+            </tr>
+        </table>
+        <br>
+        <p>Количество комментариев по каждому региону</p>
+        <table id="TableStat" cellspacing="0">
+            <tr align="center">
+                <th width="150px">Регион</th>
+                <th width="200px">Кол-во комментариев</th>
+            </tr>
+        </table>
+        <div id="insert"></div>
+        </div>
+{{ block_js }}
+<script type="text/javascript">statcomentfive()</script>
+<script type="text/javascript">statcomentall()</script>
+<script type="text/javascript">setActiveMenu();</script>
+</body>
+</html>
